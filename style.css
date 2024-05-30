@@ -42,7 +42,7 @@ nav {
 }
 
 a {
-    color: black;
+    color: white;
     text-decoration: none;
     text-decoration-color: white;
 }
@@ -247,7 +247,8 @@ section {
 }
 
 .btn-color-1:hover {
-    background-color: rgb(0,0,0);
+    background-color: white;
+    color: black;
 }
 
 .btn-color-2 {
@@ -260,6 +261,17 @@ section {
 
 .btn-container {
     gap: 1rem;
+}
+
+#socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+#socials-container img:hover {
+    filter: invert(40%);
 }
 
 /* ABOUT SECTION */
@@ -441,4 +453,31 @@ footer {
 
 footer p {
     text-align: center;
+}
+
+@media (max-width: 814px) {
+    .article-container {
+        flex-direction: column;
+    }
+}
+ 
+
+#extra-curricular {
+    margin-top: 550px;
+    position: relative;
+}
+
+.background-image {
+    background-image: url('./assets/Tarantula.jpg');
+    background-size: fit;
+    color: white;
+}
+
+
+.contact-info-container #black {
+    color: black;
+}
+
+.nav-links-container a {
+    color: black;
 }

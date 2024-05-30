@@ -10,33 +10,37 @@
     <title>My Portfolio</title>
 </head>
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">Luis Izaguirre</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Luis Izaguirre</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
+    <div class="background-image">
+        <nav id="desktop-nav">
+            <div class="logo">Luis Izaguirre</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#extra-curricular">Activities</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#project" onclick="toggleMenu()">Project</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>  
-    </nav>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="logo">Luis Izaguirre</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Project</a></li>
+                    <li><a href="#extra-curricular" onclick="toggleMenu()">Activities</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>  
+        </nav>
+    </div>
 
     <section id="profile">
         <div class="section__pic-container">
@@ -59,12 +63,14 @@
             <div id="socials-container">
                 <img src=".//assets/linkedin.png" 
                      alt="My Linkedin profile" 
-                     class="icon" 
+                     class="icon"
+                     id="linkedin" 
                      onclick="location.href='https://www.linkedin.com/in/lmi98/'"
                 />
                 <img src=".//assets/github.png" 
                      alt="My Github profile" 
-                     class="icon" 
+                     class="icon"
+                     id="github" 
                      onclick="location.href='https://github.com/Luis-Izaguirre'"
                 />
             </div>
@@ -106,16 +112,11 @@
                 </div>
                 <div class="text-container">
                     <p> 
-                        I am an aspiring software engineer with a strong 
-                        foundation in full stack web development and applications.
-                         I create functional and creative designs and maintain cohesive systems 
-                         that meet clients' needs. I have taken courses in algorithms & 
-                         data structures, software development, and advanced web engineering.
-                         I have learned many programming languages, including Java, Python, C,
-                         C++, JavaScript, and SQL, to name a few. I am open to exploring new fields such as
-                         machine learning, embedded systems, and aeronautics. I am seeking
-                         internship or full-time opportunities in software development to 
-                         contribute to innovative projects
+                        I am an aspiring software engineer with a strong foundation in full stack web development and applications.
+                        I create functional and creative designs and maintain cohesive systems that meet clients' needs. 
+                        I have taken courses in algorithms & data structures, software development, and advanced web engineering.
+                        I am open to exploring new fields such as machine learning, embedded systems, and aeronautics. I am seeking
+                        internship or full-time opportunities in software development to contribute to innovative projects
                     </p>
                 </div>
             </div>
@@ -128,12 +129,52 @@
     </section>
     <section id="experience">
         <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
+        <h1 class="title">Technical Skills</h1>
         <div class="experience-details-container">
             <div class="about-containers">
                 <div class="details-container">
                     <h2 class="experience-sub-title">Frontend Development</h2>
                     <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                                 alt="Experience icon"
+                                 class="icon"
+                            />
+                            <div> 
+                                <h3>React.js</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                                 alt="Experience icon"
+                                 class="icon"
+                            />
+                            <div> 
+                                <h3>Angular.ts</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                                 alt="Experience icon"
+                                 class="icon"
+                            />
+                            <div> 
+                                <h3>Flask</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                                 alt="Experience icon"
+                                 class="icon"
+                            />
+                            <div> 
+                                <h3>Spring</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
                         <article>
                             <img src="./assets/checkmark.png" 
                                  alt="Experience icon"
@@ -160,16 +201,6 @@
                                  class="icon"
                             />
                             <div> 
-                                <h3>SASS</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" 
-                                 alt="Experience icon"
-                                 class="icon"
-                            />
-                            <div> 
                                 <h3>JavaScript</h3>
                                 <p>Experienced</p>
                             </div>
@@ -181,7 +212,17 @@
                             />
                             <div> 
                                 <h3>TypeScript</h3>
-                                <p>Experienced</p>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                                 alt="Experience icon"
+                                 class="icon"
+                            />
+                            <div> 
+                                <h3>SASS</h3>
+                                <p>Intermediate</p>
                             </div>
                         </article>
                         <article>
@@ -191,7 +232,7 @@
                             />
                             <div> 
                                 <h3>Material UI</h3>
-                                <p>Experienced</p>
+                                <p>Intermediate</p>
                             </div>
                         </article>
                     </div>
@@ -205,8 +246,38 @@
                                  class="icon"
                             />
                             <div> 
-                                <h3>PostgreSQL</h3>
+                                <h3>Java</h3>
                                 <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                                 alt="Experience icon"
+                                 class="icon"
+                            />
+                            <div> 
+                                <h3>Python</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                                 alt="Experience icon"
+                                 class="icon"
+                            />
+                            <div> 
+                                <h3>C</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                                 alt="Experience icon"
+                                 class="icon"
+                            />
+                            <div> 
+                                <h3>C++</h3>
+                                <p>Intermediate</p>
                             </div>
                         </article>
                         <article>
@@ -217,6 +288,16 @@
                             <div> 
                                 <h3>Node JS</h3>
                                 <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                                 alt="Experience icon"
+                                 class="icon"
+                            />
+                            <div> 
+                                <h3>SQL</h3>
+                                <p>Intermediate</p>
                             </div>
                         </article>
                         <article>
@@ -245,7 +326,7 @@
                                  class="icon"
                             />
                             <div> 
-                                <h3>TypeScript</h3>
+                                <h3>Github</h3>
                                 <p>Experienced</p>
                             </div>
                         </article>
@@ -255,8 +336,8 @@
                                  class="icon"
                             />
                             <div> 
-                                <h3>Material UI</h3>
-                                <p>Experienced</p>
+                                <h3>AWS</h3>
+                                <p>Intermediate</p>
                             </div>
                         </article>
                     </div>
@@ -330,62 +411,39 @@
         <img src="./assets/arrow.png" 
              alt="Arrow Icon" 
              class="icon arrow" 
-             onclick="location.href='./#contact'"
+             onclick="location.href='./#extra-curricular'"
         />
     </section>
      <section id="extra-curricular">
-        <p class="section__text__p1">Extra Curricular Experience</p>
+        <p class="section__text__p1">Explore My</p>
         <h1 class="title">Activities</h1>
         <div class="experience-details-container">
-            <div class="about-containers">
+
                 <div class="details-container">
-                    <h2 class="experience-sub-title">Leadership Roles</h2>
+                    <h2 class="experience-sub-title">Coding BootCamps & Hackathon</h2>
                     <div class="article-container">
-                        <article>
+                        <div>
                             <img src="./assets/checkmark.png" 
                                  alt="Experience icon"
                                  class="icon"
                             />
                             <div> 
-                                <h3>President, Computer Science Club</h3>
-                                <p>2020 - Present</p>
+                                <h3> Python & Data Science, Coding Bootcamp</h3>
+                                <p>Year: 2024</p>
+                                <img class="proof v1" src="./assets/CERTIFICATE_LANDING_PAGE~P4DWQKZ7YUUV.jpeg" width="500" height="300" />
                             </div>
-                        </article>
-                        <article>
+                        </div>
+                        <div>
                             <img src="./assets/checkmark.png" 
                                  alt="Experience icon"
                                  class="icon"
                             />
                             <div> 
-                                <h3>Event Coordinator, Hackathon Club</h3>
-                                <p>2019 - 2021</p>
+                                <h3> Web3 Hackathon </h3>
+                                <p>Year: 2024</p>
+                                <img class="proof v2" src="./assets/Web3-Hackathon-1.PNG" width="500" height="300" style="border: 1px solid rgb(203, 202, 202);" />
                             </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Volunteer Work</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" 
-                                 alt="Experience icon"
-                                 class="icon"
-                            />
-                            <div> 
-                                <h3>Tutor, Coding Bootcamp</h3>
-                                <p>2021 - Present</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" 
-                                 alt="Experience icon"
-                                 class="icon"
-                            />
-                            <div> 
-                                <h3>Mentor, Girls Who Code</h3>
-                                <p>2018 - 2020</p>
-                            </div>
-                        </article>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -405,14 +463,14 @@
                      alt="Email Icon" 
                      class="icon contact-icon email-icon"
                 />
-                <p><a href="mailto:lmunozi181i@gmail.com">lmunozi181i@gmail.com</a></p>
+                <p><a  id="black" href="mailto:lmunozi181i@gmail.com">lmunozi181i@gmail.com</a></p>
             </div>
             <div class="contact-info-container">
                 <img src="./assets/linkedin.png" 
                      alt="Linkedin Icon" 
                      class="icon contact-icon"
                 />
-                <p><a href="https://www.linkedin.com/in/lmi98/">Linkedin</a></p>
+                <p><a id="black" href="https://www.linkedin.com/in/lmi98/">Linkedin</a></p>
             </div>
         </div>
     </section>
@@ -420,10 +478,11 @@
         <nav>
             <div class="nav-links-container">
                 <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#profile">Profile</a></li>
+                    <li><a id="black" href="#about">About</a></li>
+                    <li><a id="black" href="#experience">Experience</a></li>
+                    <li><a id="black" href="#projects">Projects</a></li>
+                    <li><a id="black" href="#extra-curricular">Activities</a></li>
+                    <li><a id="black" href="#profile">Profile</a></li>
                 </ul>
             </div>
         </nav>
