@@ -380,7 +380,7 @@ article .icon {
 
 #projects {
     position: relative;
-    margin-bottom: 200px;
+    margin-bottom: 300px;
 }
 
 .color-container {
@@ -465,7 +465,6 @@ footer p {
  
 
 #extra-curricular {
-    margin-top: 550px;
     position: relative;
 }
 
@@ -482,4 +481,8 @@ footer p {
 
 .nav-links-container a {
     color: black;
+}
+
+p {
+    white-space: pre-wrap;
 }
