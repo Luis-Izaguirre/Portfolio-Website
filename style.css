@@ -477,8 +477,8 @@ footer p {
 }
 
 .background-image {
-    background-image: url('./assets/Tarantula.jpg');
-    background-size: fit;
+    background-image: url('./assets/gradient-image.avif');
+    background-size: cover;
     color: white;
 }
 
