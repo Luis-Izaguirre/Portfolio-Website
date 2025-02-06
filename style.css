@@ -223,6 +223,13 @@ section:not(:first-of-type) {
     height: 2rem;
 }
 
+/*Should be image, but leave it*/
+.icon-grad {
+    width: calc(100vw - 40px);
+    height: 270px;
+    max-width: 100%;
+    border-radius: 40px;
+}
 .btn-container {
     display: flex;
     justify-content: center;
@@ -332,6 +339,14 @@ section:not(:first-of-type) {
     height: 400px;
     width: 400px;
     margin: auto 0;
+}
+
+.about-pic-container {
+}
+
+.about-info-container {
+    display: flex;
+    
 }
 
 /* .about-details-container {
