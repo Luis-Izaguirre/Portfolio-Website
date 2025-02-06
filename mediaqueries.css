@@ -1,4 +1,4 @@
-
+/* 
 @media screen and (max-width: 1400px) {
     #profile {
         height: 83vh;
@@ -40,7 +40,8 @@
     }
 
     .section__pic-container {
-        width: 275px;
+       
+        width: 5000px;
         height: 275px;
         margin: 0 auto 2rem;
     }
@@ -110,6 +111,7 @@
     }
 
     .section__pic-container {
+        
         width: auto;
         height: 46vw;
         justify-content: center;
@@ -130,9 +132,9 @@
 }
 
 @media screen and (min-width: 763px) and (max-width: 1452px) {
-    /* 371.5px */
+    
     #projects img {
-        object-fit: cover; /* This will ensure the aspect ratio of the image is maintained */
+        object-fit: cover;
         width: 371.5px;
     }
     #projects  .icon.arrow  {
@@ -140,4 +142,4 @@
     }
     
 
-}
+} */

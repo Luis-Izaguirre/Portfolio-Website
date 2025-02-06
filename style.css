@@ -182,6 +182,7 @@ section:not(:first-of-type) {
 .section__pic-container {
     display: flex;
     height: 400px;
+    /*Adjusting width to 600px was 400*/
     width: 400px;
     margin: auto 0;
 }
