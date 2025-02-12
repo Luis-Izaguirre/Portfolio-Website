@@ -332,7 +332,6 @@ section:not(:first-of-type) {
     cursor: pointer;
     height: 2rem;
 }
-
 /*Should be image, but leave it*/
 .icon-grad {
     width: calc(100vw - 40px);
