@@ -405,6 +405,8 @@ section:not(:first-of-type) {
 }
 
 .about-containers {
+    display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
     margin-bottom: 2rem;
 }
@@ -431,13 +433,13 @@ section:not(:first-of-type) {
 }
 
 .details-container {
-    padding: 1.5rem;
-    flex: 1;
+    flex: 1 1 300px;
     background: white;
     border-radius: 2rem;
     border: rgb(53,53,53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     text-align: center;
+    padding: 1.5rem;
 }
 
 .section-container {
@@ -485,6 +487,8 @@ section:not(:first-of-type) {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .article-container {
